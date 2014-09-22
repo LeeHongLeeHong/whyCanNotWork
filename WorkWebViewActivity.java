@@ -214,17 +214,6 @@ public class WorkWebViewActivity extends Activity{
 		}
 	}
 	
-	//分享
-	public void shareAPP(){
-		Log.e("TAG", shareParam.get("desc")+"----"+shareParam.get("url")+"----"+shareParam.get("img"));
-		OnekeyShare oks = new OnekeyShare();
-		oks.setTitle("摘错本");
-		oks.setText(shareParam.get("desc"));
-		oks.setUrl(shareParam.get("url"));
-		oks.setImageUrl(shareParam.get("img"));
-		oks.show(WorkWebViewActivity.this);
-	}
-	
 	private void preAction() {
 		if (preActionParam.size()!=0) {
 			if (preActionParam.get("action").equals("selectZCB")) {
